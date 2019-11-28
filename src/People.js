@@ -10,7 +10,7 @@ const People = () => (
         { /* item in the array */ }
         { names.map((value, index) => (
             <li key={ index }>
-                <a>{ value }</a>
+                <p>{ value }</p>
             </li> 
         ))}
     </ul>

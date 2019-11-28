@@ -8,7 +8,7 @@ import People from "./People";
 const Stuff = () => (
 
     <React.Fragment>
-        <Header />
+        <Header title="Hello, world!" />
         <Paragraph />
         <Square />
         <People />
