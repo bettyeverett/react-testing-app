@@ -11,7 +11,7 @@ const Stuff = () => (
         <Header title="Hello, world!" />
         <Paragraph message="Here is some text about the World, which is really very interesting. Much more interesting than listening to David Attenborough drone on about it!" />
         <Square colour="teal" />
-        <People />
+        <People names={ ["Charlotte", "Beth", "Gareth"] } />
     </React.Fragment>
 
 );
