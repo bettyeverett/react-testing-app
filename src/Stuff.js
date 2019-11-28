@@ -9,7 +9,7 @@ const Stuff = () => (
 
     <React.Fragment>
         <Header title="Hello, world!" />
-        <Paragraph />
+        <Paragraph message="Here is some text about the World, which is really very interesting. Much more interesting than listening to David Attenborough drone on about it!" />
         <Square />
         <People />
     </React.Fragment>
