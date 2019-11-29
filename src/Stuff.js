@@ -3,10 +3,10 @@
 // Update your <Stuff> component so that it can accept a square prop, which will determine whether the <Square> component is displayed or not. This prop should default to true.
 
 import React from "react";
-import Header from "./Header";
-import Paragraph from "./Paragraph";
-import Square from "./Square";
-import People from "./People";
+import Header from "./stuff/Header";
+import Paragraph from "./stuff/Paragraph";
+import Square from "./stuff/Square";
+import People from "./stuff/People";
 
 const Stuff = ( { square } ) => (
 
