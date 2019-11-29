@@ -4,12 +4,12 @@
 
 import React from "react";
 
-const Paragraph = ({ message }) => (
-    <p>{ message }</p>
+const Paragraph = ({ children }) => (
+    <p>{ children }</p>
 );
 
 Paragraph.defaultProps = {
-    message: "Something has gone wrong and there isn't any text available right now!"
+    children: "Something has gone wrong and there isn't any text available right now!"
 };
 
 export default Paragraph;
