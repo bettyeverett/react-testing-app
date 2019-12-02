@@ -15,18 +15,21 @@ class People extends Component {
         return (
 
             names ? (
-                <ul
-                    onClick={ this.handleClick }
-                >
-                    { /* use map to output an <li> for each */ } 
-                    { /* item in the array */ }
-                    { names.map((value, index) => (
-                        <li key={ index }>
-                            <p>{ value }</p>
-                        </li> 
-                    ))}
-                </ul>
+                <div className="jumbotron">
+                    <ul
+                        onClick={ this.handleClick }
+                    >
+                        { /* use map to output an <li> for each */ } 
+                        { /* item in the array */ }
+                        { names.map((value, index) => (
+                            <li key={ index }>
+                                <p>{ value }</p>
+                            </li> 
+                        ))}
+                    </ul>
+                </div>
             ) : <p>Nothing to see here!</p>
+                
 
         );
 

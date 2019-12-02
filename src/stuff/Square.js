@@ -32,8 +32,10 @@ class Square extends Component {
     return (
 
       <div 
+        className="jumbotron"
         onClick={ this.handleClick }
         style={ { 
+          position: "center",
           backgroundColor: this.state.isRed ? "red" : colour,
           width: "200px", 
           height: "200px" 

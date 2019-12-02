@@ -9,14 +9,31 @@ class CatchMeIfYouCan extends Component {
 
         this.state = {
             yposition: 0,
-        }
+        };
 
         this.handleClick = this.handleClick.bind(this);
     
     }
 
     handleClick() {
-        this.setState
+        this.setState( {
+            yposition: this.state.yposition + this.props.jump,
+        } );
+
+    }
+
+    render() {
+        return (
+            <button
+                style={ { position: "relative", top: this.state.yposition + "px" } }
+                onClick={ this.handleClick }
+                className="btn btn-primary"
+            >
+                Catch Me If You Can!
+            </button>
+        );
     }
 
 }
+
+export default CatchMeIfYouCan;

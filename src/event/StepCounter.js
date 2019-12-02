@@ -44,17 +44,19 @@ class StepCounter extends Component {
 
         return (
             <>
-                <p style={ { margin: "30px" } } class="lead">{ this.state.initial }</p>
-                <button 
-                    onClick={ this.handleClickAdd }
-                    style={ { margin: "30px" } } 
-                    class="btn btn-dark"
-                >+</button>
-                <button 
-                    onClick={ this.handleClickSubtract }
-                    style={ { margin: "30px" } } 
-                    class="btn btn-dark"
-                >-</button>
+                <div className="jumbotron">
+                    <p style={ { margin: "30px" } } class="lead">{ this.state.initial }</p>
+                    <button 
+                        onClick={ this.handleClickAdd }
+                        style={ { margin: "30px" } } 
+                        class="btn btn-dark"
+                    >+</button>
+                    <button 
+                        onClick={ this.handleClickSubtract }
+                        style={ { margin: "30px" } } 
+                        class="btn btn-dark"
+                    >-</button>
+                </div>
             </>
         );
 

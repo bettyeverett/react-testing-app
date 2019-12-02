@@ -11,7 +11,9 @@ class Paragraph extends Component {
         let { children } = this.props;
 
         return (
-            <p>{ children }</p>
+            <div className="jumbotron">
+                <p>{ children }</p>
+            </div>
         );
 
     }
