@@ -26,12 +26,12 @@ class ToggleText extends Component {
         let {initial, alternate} = this.props;
 
         return (
-            <>
+            <div className="jumbotron" >
                 <p>
                     { this.state.initial ? initial : alternate }
                 </p>
                 <button onClick={ this.handleClick }>Toggle</button>
-            </>
+            </div>
         );
     }
 
