@@ -15,15 +15,15 @@ class Clicked extends Component {
             clicked: false,
             };
 
-        // force this to always be *this* this in handleClick
         this.handleClick = this.handleClick.bind(this);
 
     }
 
     handleClick() {
+
         // set new value
         // pass in a POJO with values we want to update 
-        this.setState({ clicked: true });
+        this.setState( { clicked: true } );
     }
 
     render() {
@@ -31,9 +31,7 @@ class Clicked extends Component {
         return (
             <p 
                 className="jumbotron" 
-                onClick={ this.handleClick }
-            >
-                { this.state.clicked  ? "Clicked" : "Not Clicked" }
+                onClick={ this.handleClick }>{ this.state.clicked  ? "Clicked" : "Not Clicked" }
             </p>
     
         );
