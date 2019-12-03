@@ -28,7 +28,7 @@ class Length extends Component {
         let { input } = this.state;
 
         return (
-            <div className="form-group">
+            <div className="form-group jumbotron">
                 <label>{ label }</label>
                 <input 
                     className="form-control" 

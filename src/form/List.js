@@ -50,7 +50,7 @@ class List extends Component {
                 <ul>
                     { list.map((value, index) => (
                         <li key={ index }>
-                            <p>{ value }</p>
+                            { value }
                         </li> 
                     ))}
                 </ul>
