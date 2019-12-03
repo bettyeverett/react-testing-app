@@ -11,8 +11,8 @@ import People from "./stuff/People";
 const Stuff = ( { square } ) => (
 
     <React.Fragment>
-        <Header>Hello, world!</Header>
-        <Paragraph>Here is some text about the World, which is really very interesting. Much more interesting than listening to David Attenborough drone on about it!</Paragraph>
+        <Header />
+        <Paragraph />
         { square ? (<Square colour="teal" />) : null }
         <People names={ ["Charlotte", "Beth", "Gareth"] } />
     </React.Fragment>

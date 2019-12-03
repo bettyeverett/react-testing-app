@@ -1,19 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Header extends Component {
+const Header = () => (
 
-    render() {
+    <header className="jumbotron">
+        <h1>Hello, world!</h1>
+    </header>
+    
+);
 
-        let { children } = this.props;
-
-        return (
-            <header className="jumbotron">
-                <h1>{ children }</h1>
-            </header>
-        );
-    }
-
-}
 // we use className to add classes for Bootstrap styling
 
 export default Header;

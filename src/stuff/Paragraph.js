@@ -2,23 +2,15 @@
 
 // Update your <Paragraph> component so that it can accept a message prop, which it will display between the <p> tags. If no message is provided it should just display "Hello, world".
 
-import React, { Component } from "react";
+import React from "react";
 
-class Paragraph extends Component {
+const Paragraph = () => (
 
-    render() {
-
-        let { children } = this.props;
-
-        return (
-            <div className="jumbotron">
-                <p>{ children }</p>
-            </div>
-        );
-
-    }
-
-}
+    <div className="jumbotron">
+        <p>Here is some text about the World, which is really very interesting. Much more interesting than listening to David Attenborough drone on about it!</p>
+    </div>
+    
+);
 
 Paragraph.defaultProps = {
     children: "Something has gone wrong and there isn't any text available right now!"
