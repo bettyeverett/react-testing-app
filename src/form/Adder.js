@@ -9,7 +9,6 @@ class Adder extends Component {
 
         this.state = {
             input: "",  
-            counter: 0,
             list: [],
         };
 
@@ -24,13 +23,12 @@ class Adder extends Component {
 
     handleClick() {
 
-        let { input, counter, list } = this.state;
+        let { input, list } = this.state;
 
         this.setState( { 
-            list: [...list, input],
-            counter: +counter + +input,
-            input: 0,
-        });
+            list: [...list, +input],
+            input: "",
+        })
 
 
     }
@@ -38,7 +36,7 @@ class Adder extends Component {
     render() {
 
         let { label, name } = this.props;
-        let { input, counter, list } = this.state;
+        let { input, list } = this.state;
 
         return (
 
@@ -58,7 +56,7 @@ class Adder extends Component {
                         </li> 
                     ))}
                 </ul>
-                <p>{ counter }</p>
+                <p>{ list.reduce((total, input) => total + input, 0) }</p>
             </div>
 
         );

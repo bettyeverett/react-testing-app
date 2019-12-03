@@ -30,7 +30,7 @@ class Transform extends Component {
 
         return (
 
-            <div className="form-group jumbotron">
+            <div className="box form-group jumbotron">
                 <label>{ label }</label>
                 <input 
                     type="number"

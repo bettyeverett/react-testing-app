@@ -13,7 +13,7 @@ const Form = () => (
       <Adder />
       <TempConverter />
       <Transform transform={ x => x * x } label="Squared" name="squared"></Transform>
-      <Transform transform={ x => x + x } label="Add" name="add"></Transform>
+      <Transform transform={ x => x + x } label="Double" name="double"></Transform>
     </>
   );
 

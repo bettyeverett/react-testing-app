@@ -8,8 +8,8 @@ class TempConverter extends Component {
         super(props);
 
         this.state = {
-            farenheit: 0,
-            celsius: 0,
+            farenheit: "32",
+            celsius: "0",
         }
 
         this.handleChangeFarenheit = this.handleChangeFarenheit.bind(this);
