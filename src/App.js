@@ -4,7 +4,7 @@ import React from "react";
 import Stuff from "./Stuff";
 import Event from "./Event";
 import Form from "./Form";
-import LiftingState from "./LiftingState";
+import LiftingState from "./liftingstate/LiftingState";
 
 // use the Header component as if it was an HTML element
 const App = () => (
