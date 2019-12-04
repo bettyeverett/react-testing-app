@@ -12,6 +12,7 @@ import Form from "./Form";
 import Square from "./stuff/Square";
 import Transform from "./form/Transform";
 import Footer from "./stuff/Footer";
+import Progress from "./pbcomponents/Progress";
 
 // use the Header component as if it was an HTML element
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
     <Route path="/" component={ Header }/>
     <Route exact path="/content" component={ Paragraph }/>
     <Route exact path="/form" component={ Form } />
+    <Route exact path="/progress" component={ Progress } />
 
     <Route path="/square" render={ () => (
       <Square 
