@@ -16,6 +16,7 @@ import Progress from "./pbcomponents/Progress";
 import CatchMe from "./pbcomponents/CatchMe";
 import PasswordStrength from "./pbcomponents/PasswordStrength";
 import Articles from "./blog/Articles";
+import Article from "./blog/Article";
 
 // use the Header component as if it was an HTML element
 const App = () => (
@@ -49,7 +50,10 @@ const App = () => (
 
             {/* <Footer /> */}
 
-            <Articles />
+            <Route exact path="/articles" component={ Articles } />
+            <Route path="/articles/:id" render={ ({ match }) => ( 
+                <Article id={ match.params.id } />
+            ) } />
       
         </>
     </Router>
