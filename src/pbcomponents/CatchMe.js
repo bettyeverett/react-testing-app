@@ -21,7 +21,7 @@ class CatchMe extends Component {
         let { jump } = this.props;
 
         this.setState( {
-            yposition: yposition + +jump,
+            yposition: yposition + jump,
         } );
 
     }
