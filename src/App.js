@@ -15,6 +15,7 @@ import Transform from "./form/Transform";
 import Progress from "./pbcomponents/Progress";
 import CatchMe from "./pbcomponents/CatchMe";
 import PasswordStrength from "./pbcomponents/PasswordStrength";
+import Articles from "./blog/Articles";
 
 // use the Header component as if it was an HTML element
 const App = () => (
@@ -47,6 +48,8 @@ const App = () => (
             ) } />
 
             {/* <Footer /> */}
+
+            <Articles />
       
         </>
     </Router>
