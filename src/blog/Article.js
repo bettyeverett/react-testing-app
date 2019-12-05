@@ -3,6 +3,7 @@
 // Update your <Articles> component to link through to <Article>
 import React, { Component } from "react";
 import axios from "./axios";
+import Comments from "./Comments";
 
 class Article extends Component {
 
@@ -20,7 +21,7 @@ class Article extends Component {
         let { id } = this.props;
 
         // make the GET request
-        axios.get(`/articles/${id }`).then(({ data }) => {
+        axios.get(`/articles/${ id }`).then(({ data }) => {
             // once the data has come back update the component state
             this.setState({
                 loaded: true,
@@ -44,6 +45,7 @@ class Article extends Component {
                         <li className="list-group-item">{ tag }</li>
                     )) }
                 </ul>
+                <Comments id={ article.id } />
                 
             </> 
         );   
