@@ -1,6 +1,7 @@
 // Create a component <Articles> which lists all of the articles. It should show when you visit /articles
 import React, { Component } from "react";
 import axios from "./axios";
+import { Link } from "react-router-dom";
 
 class Articles extends Component {
 
@@ -22,7 +23,7 @@ class Articles extends Component {
                 loaded: true,
                 articles: data.data,
             }); 
-            
+
         });
                 
     }
@@ -36,7 +37,9 @@ class Articles extends Component {
                 <h2>Some very interesting articles</h2> 
                 <ul className="list-group">
                     { articles.map(article => (
-                        <li className="list-group-item">{ article.title }</li>
+                        <li className="list-group-item">
+                            <Link to={ `/articles/${ article.id }` }>{ article.title }</Link>
+                        </li>
                     )) } 
                 </ul>
             </> 
